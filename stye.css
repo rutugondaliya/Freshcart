@@ -1,0 +1,122 @@
+.sub-list {
+    list-style: none;
+    padding-left: 7px;
+    padding-top: 10px;
+}
+
+.list-a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-a:hover {
+    color: black;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.main-list {
+    position: absolute;
+    top: 100px;
+    z-index: 3;
+    width: 200px;
+    border: 1px groove grey;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+}
+
+.nav-link:hover .main-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50px);
+}
+
+/* .main-list-1 {
+    position: absolute;
+    top: 100px;
+    z-index: 3;
+    width: 100%;
+    border: 1px groove grey;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+} */
+
+.item {
+    transition: 0.5s;
+}
+
+.item:hover {
+    border-color: green !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+
+/* .owl-carousel .owl-nav button.owl-prev{
+    font-size: 50px !important;
+}
+
+.owl-carousel .owl-nav button.owl-Next{
+    font-size: 50px !important;
+} */
+.cards {
+    border-radius: 10px;
+    background-image: url('img/14.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: scale(-1, 1);
+    height: 200px;
+
+}
+
+.cards-1 {
+    border-radius: 10px;
+    background-image: url('https://freshcart-next-js-template.netlify.app/images/banner/grocery-banner-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 200px;
+    width: 100%;
+}
+
+/* .row-1{
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.col-1{
+    /* width: 20px; */
+    padding: 10px;
+}
+
+.cards-2,.cards-3{
+    transition: 0.5s;
+
+}
+.cards-2:hover {
+    border-color: green !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+}
+
+.cards-3{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.cards-2:hover .cards-3 {
+    opacity: 1;
+    visibility: visible;
+   
+}
+.fa-class{
+    transition: 0.5s;
+}
+
