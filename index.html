@@ -1,1666 +1,1563 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food website</title>
-    <link rel="stylesheet" href="stye.css   ">
-    <link rel="stylesheet" href="all.min.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="owl.carousel.min.css">
-    <link rel="stylesheet" href="owl.theme.default.css">
-</head>
+    <link rel="stylesheet" href="stye.css   " />
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl.theme.default.css" />
+  </head>
 
-<body>
-
-
+  <body>
     <!-- But now button -->
     <section>
-        <div class="position-relative">
-            <button class="btn btn-dark position-fixed end-0 bottom-0 fw-bold my-3 me-3" style="z-index: 10;">
-                BUY NOW
-            </button>
-
-        </div>
+      <div class="position-relative">
+        <button
+          class="btn btn-dark position-fixed end-0 bottom-0 fw-bold my-3 me-3"
+          style="z-index: 10"
+        >
+          BUY NOW
+        </button>
+      </div>
     </section>
 
     <!-- HEader -->
     <section class="container py-3">
-        <header>
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <img src="img/11.svg" alt="">
+      <div class="row align-items-center">
+        <!-- Logo -->
+        <div class="col-6 col-md-2">
+          <img src="img/11.svg" class="img-fluid" alt="" />
+        </div>
 
-                </div>
+        <!-- Search + Icons -->
+        <div class="col-12 col-md-6 order-3 order-md-2 my-2 my-md-0">
+          <div class="d-flex align-items-center gap-2 flex-nowrap">
+            <!-- Search -->
+            <form class="flex-grow-1">
+              <div class="input-group">
+                <input
+                  placeholder="Search for products"
+                  class="form-control"
+                  type="search"
+                />
+                <button class="btn border" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
 
-                <div class="d-flex align-items-center">
-                    <div class="col-12">
-                        <form action="">
-                            <div class="input-group ">
-                                <input placeholder="Search for products" class="rounded form-control" type="search">
-                                <button class="btn border " type="submit">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+            <!-- Icons -->
+            <div class="d-flex align-items-center gap-2">
+              <button class="btn p-1">
+                <i class="fas fs-5 fa-heart"></i>
+              </button>
 
+              <button class="btn p-1">
+                <i class="fa-solid fs-5 fa-user"></i>
+              </button>
 
-
-                    <div class="px-3">
-                        <button class="btn btn-outline-secondary">
-                            Location
-                        </button>
-                    </div>
-
-                </div>
-
-                <div>
-                    <button type="button" class="btn position-relative p-1">
-                        <i class="fas fs-4 fa-heart"></i>
-                        <span
-                            class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                            <span class="visually-hidden">New alerts</span>
-                        </span>
-                    </button>
-
-                    <button type="button" class="btn position-relative p-1">
-                        <i class="fa-solid fs-4 fa-user"></i>
-                        <span
-                            class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                            <span class="visually-hidden">New alerts</span>
-                        </span>
-                    </button>
-
-
-                    <button type="button" class="btn position-relative p-1">
-                        <i class="fa-solid fs-4 fa-bag-shopping"></i>
-                        <span
-                            class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle">
-                            <span class="visually-hidden">New alerts</span>
-                        </span>
-                    </button>
-
-                </div>
+              <button class="btn p-1">
+                <i class="fa-solid fs-5 fa-bag-shopping"></i>
+              </button>
             </div>
-        </header>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="col-6 col-md-2 order-2 order-md-3 text-end">
+          <button class="btn btn-outline-secondary w-100 w-md-auto">
+            Location
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Header Menu -->
-    <section>
-        <div class="container py-3 pb-0">
-            <div class="d-flex align-items-center   ">
-                <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    All Departments
-                </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container">
+        <!-- LEFT: ALL DEPARTMENTS -->
+        <div class="dropdown me-3">
+          <a
+            class="btn btn-success dropdown-toggle"
+            href="#"
+            data-bs-toggle="dropdown"
+          >
+            All Departments
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dairy , Breads & Eggs</a></li>
+            <li><a class="dropdown-item" href="#">Snacks & Munchies</a></li>
+            <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+            <li><a class="dropdown-item" href="#">Cold Drinks & Juices</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Breakfast & Instant Foods</a>
+            </li>
+            <li><a class="dropdown-item" href="#">Bakery & Biscuits</a></li>
+            <li><a class="dropdown-item" href="#">Chicken , Meat & Fish</a></li>
+          </ul>
+        </div>
 
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Dairy , Breads & Eggs</a></li>
-                    <li><a class="dropdown-item" href="#">Snacks & Munchies</a></li>
-                    <li><a class="dropdown-item" href="#">Fruits & Vegetables </a></li>
-                    <li><a class="dropdown-item" href="#">Cold Drinks & Jucies </a></li>
-                    <li><a class="dropdown-item" href="#">Breakfast & Instant Foods </a></li>
-                    <li><a class="dropdown-item" href="#">Bakery & Bisuits </a></li>
-                    <li><a class="dropdown-item" href="#">Chicken , Meat & Fish </a></li>
-                </ul>
+        <!-- TOGGLER (MOBILE) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div>
-                    <ul class="d-flex align-items-center mb-0 ">
-                        <a href="#" class="list-b  text-dark " style="text-decoration: none;">
-                            <li class=" nav-link  py-3">Home <i class="fa-solid fa-chevron-down"
-                                    style="font-size: 10px;"></i>
-                                <ul class="main-list p-1">
-                                    <li class="sub-list"><a href="#" class="list-a">Home Default</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Home Modern</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Home Creative</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Home Local Store</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Home Minimalist</a></li>
-                                </ul>
-                            </li>
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-3">
+            <!-- HOME -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Home</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home Default</a></li>
+                <li><a class="dropdown-item" href="#">Home Modern</a></li>
+                <li><a class="dropdown-item" href="#">Home Creative</a></li>
+                <li><a class="dropdown-item" href="#">Home Local Store</a></li>
+                <li><a class="dropdown-item" href="#">Home Minimalist</a></li>
+              </ul>
+            </li>
 
-                        </a>
-                        <a href="#" class="list-b text-dark" style="text-decoration: none;">
-                            <li class="nav-link   py-3">Shop <i class="fa-solid fa-chevron-down"
-                                    style="font-size: 10px;"></i>
-                                <ul class="main-list p-1">
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop Grid- filter</a>
-                                    </li>
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop Grid -
-                                            3column</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop list -filter</a>
-                                    </li>
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop - filter</a>
-                                    </li>
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop Wide</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop Single</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop Single V2</a>
-                                    </li>
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop Wishlist</a>
-                                    </li>
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop Cart</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a text-secondary">Shop Checkout</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </a>
-                        <a href="#" class="list-b text-dark" style="text-decoration: none;">
-                            <li class="nav-link   py-3">Stores <i class="fa-solid fa-chevron-down"
-                                    style="font-size: 10px;"></i>
-                                <ul class="main-list p-1">
-                                    <li class="sub-list"><a href="#" class="list-a">Store list</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Store Grid</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Store Single</a></li>
+            <!-- SHOP -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Shop</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Shop Grid - Filter</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Shop Grid - 3 Column</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Shop List - Filter</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Shop Wide</a></li>
+                <li><a class="dropdown-item" href="#">Shop Single</a></li>
+                <li><a class="dropdown-item" href="#">Shop Wishlist</a></li>
+                <li><a class="dropdown-item" href="#">Shop Cart</a></li>
+                <li><a class="dropdown-item" href="#">Shop Checkout</a></li>
+              </ul>
+            </li>
 
-                                </ul>
-                            </li>
-                        </a>
-                        <a href="#" class="list-c text-dark" style="text-decoration: none;">
-                            <li class="nav-link text-dark py-3 " aria-expanded="false">Mega Menu <i
-                                    class="fa-solid fa-chevron-down" style="font-size: 10px;"></i>
-                                <!-- <div class="dropdown-menu d-block " aria-labelledby="dropdownMenuLink"
-                                    data-bs-toggle="dropdown">
-                                    <div class="row ms-auto ">
+            <!-- STORES -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Stores</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Store List</a></li>
+                <li><a class="dropdown-item" href="#">Store Grid</a></li>
+                <li><a class="dropdown-item" href="#">Store Single</a></li>
+              </ul>
+            </li>
 
-                                        <div class="col-lg-3 col-12 ps-3">
-                                            <ul class="p-0">
-                                                <li class="nav-link px-2">
-                                                    <h6 class="text-success">
-                                                        Dairy, Breads & Eggs
-                                                    </h6>
-                                                </li>
+            <!-- MEGA MENU (simple placeholder) -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Mega Menu</a
+              >
+              <ul class="dropdown-menu p-3" style="width: 300px">
+                <li><strong>Category 1</strong></li>
+                <li><a class="dropdown-item" href="#">Item 1</a></li>
+                <li><a class="dropdown-item" href="#">Item 2</a></li>
+                <li><a class="dropdown-item" href="#">Item 3</a></li>
+              </ul>
+            </li>
 
-                                                <li class="nav-link p-0"><a href="#"
-                                                        class="dropdown-item px-2">Butter</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Milk
-                                                        Drinks</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Curd &
-                                                        Yogurt</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Eggs</a>
-                                                </li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Buns &
-                                                        Bakery</a></li>
-                                                <li class="nav-link p-0"><a href="#"
-                                                        class="dropdown-item px-2">Cheese</a></li>
-                                                <li class="nav-link p-0"><a href="#"
-                                                        class="dropdown-item px-2">Condensed Milk</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Dairy
-                                                        Products</a></li>
-                                            </ul>
-                                        </div>
+            <!-- PAGES -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Pages</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                <li><a class="dropdown-item" href="#">Blog Category</a></li>
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">404 Error</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+              </ul>
+            </li>
 
-                                        <div class="col-lg-3 col-12 ps-3">
-                                            <ul class="p-0">
-                                                <li class="nav-link px-2">
-                                                    <h6 class="text-success">
-                                                        Breakfast & Instant Foods
-                                                    </h6>
-                                                </li>
+            <!-- ACCOUNT -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Account</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Signin</a></li>
+                <li><a class="dropdown-item" href="#">Signup</a></li>
+                <li><a class="dropdown-item" href="#">Forgot Password</a></li>
+                <li><a class="dropdown-item" href="#">My Account</a></li>
+              </ul>
+            </li>
 
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">breakfat
-                                                        Cereal</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">
-                                                        Noodles, Pasta & Soup</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Frozen
-                                                        veg Snacks</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Frozen
-                                                        Non-veg Snacks</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Frozen
-                                                        Non-veg Snacks</a></li>
-                                                <li class="nav-link p-0"><a href="#"
-                                                        class="dropdown-item px-2">Instant Mixes</a></li>
-                                                <li class="nav-link p-0"><a href="#"
-                                                        class="dropdown-item px-2">Batter </a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">
-                                                        Fruit & Juices</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-3 col-12 ps-3">
-                                            <ul class="p-0">
-                                                <li class="nav-link px-2">
-                                                    <h6 class="text-success">
-                                                        Cold Drinks &  Juices
-                                                    </h6>
-                                                </li>
+            <!-- DASHBOARD -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
 
-                                                <li class="nav-link p-0"><a href="#"
-                                                        class="dropdown-item px-2">Soft Drinks</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Fruit
-                                                        Juices</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">
-                                                        Coldpress</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">Water & Ice Cubes</a>
-                                                </li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">
-                                                        Soda & Mixers</a></li>
-                                                <li class="nav-link p-0"><a href="#"
-                                                        class="dropdown-item px-2">Health Drinks</a></li>
-                                                <li class="nav-link p-0"><a href="#"
-                                                        class="dropdown-item px-2">Herbal Drinks</a></li>
-                                                <li class="nav-link p-0"><a href="#" class="dropdown-item px-2">
-                                                        Milk Drinks</a></li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-lg-3 col-12 ps-3">
-                                            <h6 class="text-success">
-                                                Dairy, Breads & Eggs
-                                            </h6>
-                                            <img src="img/menu-banner.jpg" class="img-fluid" alt="">
-                                        </div>
-
-                                    </div>
-                                </div> -->
-                            </li>
-                        </a>
-                        <a href="#" class="list-b text-dark" style="text-decoration: none;">
-                            <li class="nav-link   py-3">Pages <i class="fa-solid fa-chevron-down"
-                                    style="font-size: 10px;"></i>
-                                <ul class="main-list p-1">
-                                    <li class="sub-list"><a href="#" class="list-a">Blog</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Blog Single </a></li>
-                                    <li class="sub-list"><a href="#" class="list-a"> Blog category</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a"> About us</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a"> 404 Error</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Contact</a></li>
-                                </ul>
-                            </li>
-                        </a>
-                        <a href="#" class="list-b text-dark  " style="text-decoration: none;">
-                            <li class="nav-link py-3">Account <i class="fa-solid fa-chevron-down"
-                                    style="font-size: 10px;"></i>
-                                <ul class="main-list p-1">
-                                    <li class="sub-list"><a href="#" class="list-a">Signin</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Signup</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Forgot Password</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">My Account</a><i
-                                            class="fa-solid ms-5 text-dark fa-chevron-right"></i></li>
-                                </ul>
-                            </li>
-                        </a>
-
-                        <a href="#" class="list-b " style="text-decoration: none;">
-                            <li class="nav-link text-dark  py-3">Dashboard </li>
-                        </a>
-
-
-                        </a> <a href="#" style="text-decoration: none;">
-                            <li class="nav-link text-dark  py-3">Docs
-                                <!-- <ul class="main-list p-1">
-                                    <li class="sub-list"><a href="#" class="list-a">Home Default</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Home Modern</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Home Creative</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Home Local Store</a></li>
-                                    <li class="sub-list"><a href="#" class="list-a">Home Minimalist</a></li>
-                                </ul> -->
-                            </li>
-                        </a>
-
-                    </ul>
-                </div>
-            </div>
-    </section>
+            <!-- DOCS -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Docs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Carousel -->
-    <hr>
+    <hr />
     <section>
-        <div class="container py-3">
-            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+      <div class="container py-3">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
 
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/2.png" class="d-block w-100" alt="...">
-                    </div>
-
-                </div>
-
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/1.png" class="d-block w-100" alt="..." />
             </div>
+            <div class="carousel-item">
+              <img src="img/2.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Featured Categories -->
     <section>
-        <div class="container pt-5">
-            <h1>Featured Categories</h1>
-            <div class="owl-carousel owl-theme py-4">
+      <div class="container pt-5">
+        <h1>Featured Categories</h1>
+        <div class="owl-carousel owl-theme py-4">
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/1.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Tea, Coffee & Drinks</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/1.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Tea, Coffee & Drinks</p>
-                </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/2.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Atta, Rice & Dal</p>
+          </div>
 
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/3.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Baby Care</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/2.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Atta, Rice & Dal</p>
-                </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/4.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Chicken, Meat & Fish</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/3.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Baby Care</p>
-                </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/5.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Cleaning Essentials</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/4.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Chicken, Meat & Fish</p>
-                </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/6.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Pet care</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/5.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Cleaning Essentials</p>
-                </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/7.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Fruits & Vegetables</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/6.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Pet care</p>
-                </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/8.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Cold Drinks & juices</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/7.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center"> Fruits & Vegetables</p>
-                </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/12.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Instant Foods</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/8.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center"> Cold Drinks & juices</p>
-                </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/9.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Dairy, Breads & Eggs</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/12.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Instant Foods </p>
-                </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/10.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Snacks & Munchies</p>
+          </div>
 
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/9.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Dairy, Breads & Eggs </p>
-                </div>
-
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/10.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Snacks & Munchies
-                    </p>
-                </div>
-
-                <div class="item border  p-4" style="border-radius: 10px;">
-                    <img src="img/11.jpg" class="w-50 m-auto" alt="">
-                    <p class="text-secondary pt-3 text-center">Bakery & Bisuits</p>
-                </div>
-
-
-
-
-            </div>
+          <div class="item border p-4" style="border-radius: 10px">
+            <img src="img/11.jpg" class="w-50 m-auto" alt="" />
+            <p class="text-secondary pt-3 text-center">Bakery & Bisuits</p>
+          </div>
         </div>
-
-
+      </div>
     </section>
 
     <!-- background-image -->
     <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-12 py-2" style="position: relative;">
-                    <div class="cards ">
-
-                    </div>
-                    <div style="position: absolute; top: 0;" class="px-5 pt-5">
-                        <h3>Fruits & Vegetables</h3>
-                        <p class="text-secondary">Get Upto 30% OFF</p>
-                        <button class="btn bg-dark text-white">Shop Now</button>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6 col-12 py-2" style="position: relative;">
-                    <div class="cards-1 border ">
-
-                    </div>
-                    <div style="position: absolute; top: 0;" class="px-5 pt-5">
-                        <h3>Freshly Baked Buns</h3>
-                        <p class="text-secondary">Get Upto 25% OFF</p>
-                        <button class="btn bg-dark text-white">Shop Now</button>
-                    </div>
-
-                </div>
-
-
-
-
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 py-2" style="position: relative">
+            <div class="cards"></div>
+            <div style="position: absolute; top: 0" class="px-5 pt-5">
+              <h3>Fruits & Vegetables</h3>
+              <p class="text-secondary">Get Upto 30% OFF</p>
+              <button class="btn bg-dark text-white">Shop Now</button>
             </div>
+          </div>
+
+          <div class="col-lg-6 col-12 py-2" style="position: relative">
+            <div class="cards-1 border"></div>
+            <div style="position: absolute; top: 0" class="px-5 pt-5">
+              <h3>Freshly Baked Buns</h3>
+              <p class="text-secondary">Get Upto 25% OFF</p>
+              <button class="btn bg-dark text-white">Shop Now</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Popular Products -->
     <section>
-        <div class="container py-5">
-            <h1 class="pt-4 ">Popular Products</h1>
+      <div class="container py-5">
+        <h1 class="pt-4">Popular Products</h1>
 
-            <div class="row row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-2   g-4">
-                <!-- Bhujiya -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
+        <div
+          class="row row-cols-lg-5 row-cols-md-3 row-cols-sm-2 row-cols-2 g-4"
+        >
+          <!-- Bhujiya -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/bhujiya.jpg" class="card-img-top" alt="..." />
+                  </div>
 
-                                <div class="">
-                                    <img src="img/bhujiya.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100">
-                                    <div class="d-flex text-center flex-column gap-1 w-25">
-                                        <span class="bg-danger text-white  rounded-3">Sale</span>
-                                        <span class="bg-success text-white  rounded-3">10%</span>
-                                    </div>
-
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Snacks & Munchies</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Haldiram's Sev bhujiya</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $21.6
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
+                  <div class="position-absolute top-0 w-100">
+                    <div class="d-flex text-center flex-column gap-1 w-25">
+                      <span class="bg-danger text-white rounded-3">Sale</span>
+                      <span class="bg-success text-white rounded-3">10%</span>
                     </div>
+
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-
-                <!-- NUtichoice -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/nutri.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100 pt-5">
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Bakery & Biscuits</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">NutriChoice Digestive</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $24
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                <p class="card-title text-muted mb-1">Snacks & Munchies</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Haldiram's Sev bhujiya
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
                 </div>
 
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $21.6 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $24
+                    </span>
+                  </div>
 
-                <!-- 5 Star -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/5star.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100 ">
-                                    <span class="bg-danger text-white px-2 py-1 w-75  rounded-3"
-                                        style="font-size: 12px;">Buy
-                                        1 Get $4.00 Off</span>
-                                    <div class="d-flex  flex-column gap-1 pt-4 ">
-
-                                    </div>
-
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Bakery & Biscuits</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Cadbury 5 Star Chocolate</p>
-
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $35
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $35
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
                 </div>
-
-
-                <!-- Lays -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/lays.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100">
-                                    <div class="d-flex text-center flex-column gap-1 w-25">
-                                        <span class="bg-danger text-white  rounded-3">Hot</span>
-                                        <span class="bg-success text-white  rounded-3">40%</span>
-                                    </div>
-
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Snacks & Munchies</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Onion Flavour Potato</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $3
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $5
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Acid -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/acid.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100">
-                                    <div class="d-flex text-center flex-column gap-1 w-25">
-                                        <span class="bg-success text-white  rounded-3">35%</span>
-                                    </div>
-
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-5">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Instant Foods</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Salted Instant popcorn</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $11.7
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $18
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- 5 star -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/5star.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100 ">
-                                    <span class="bg-danger text-white px-2 py-1 w-75  rounded-3"
-                                        style="font-size: 12px;">Buy
-                                        1 Get $4.00 Off</span>
-                                    <div class="d-flex  flex-column gap-1 pt-4 ">
-
-                                    </div>
-
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Bakery & Biscuits</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Cadbury 5 Star Chocolate</p>
-
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $35
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $35
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Bhujiya -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/bhujiya.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100">
-                                    <div class="d-flex text-center flex-column gap-1 w-25">
-                                        <span class="bg-danger text-white  rounded-3">Sale</span>
-                                        <span class="bg-success text-white  rounded-3">10%</span>
-                                    </div>
-
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Snacks & Munchies</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Haldiram's Sev bhujiya</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $21.6
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- yougurt -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/yogurt.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100">
-                                    <span class="bg-success text-white w-100 px-2  rounded-3">40%</span>
-
-                                    <div class="d-flex text-center flex-column gap-1 w-25 pt-4">
-                                    </div>
-
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Dairy ,Breads & Eggs</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Blueberry greek Yogurt</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $14.4
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- cheese -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/cheese.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100 pt-5">
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Dairy , Breads & Eggs</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Britania Cheese Slices</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $24
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- corn -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/corn.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100">
-                                    <span class="bg-success text-white w-100 px-2  rounded-3">15%</span>
-
-                                    <div class="d-flex text-center flex-column gap-1 w-25 pt-4">
-                                    </div>
-
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Instant Foods</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Kellogg's Original Cereals</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $29.75
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $35
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- nutrichoice -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/nutri.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100 pt-5">
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Bakery & Biscuits</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">NutriChoice Digestive</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $24
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chocolate -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/chocolate.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100 pt-5">
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Snacks & Munchies</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Slurrp Millet Chocolate</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $0
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $0
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Butter -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/butter.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100">
-                                    <span class="bg-success text-white w-100 px-2  rounded-3">40%</span>
-
-                                    <div class="d-flex text-center flex-column gap-1 w-25 pt-4">
-                                    </div>
-
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Dairy ,Breads & Eggs</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Amul Butter - 500 g</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $13.5
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $18
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- nutrichoice -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/nutri.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100 pt-5">
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Bakery & Biscuits</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">NutriChoice Digestive</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $24
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chocolate -->
-                <div class="col">
-                    <div class="card h-100 cards-2" style="border-radius: 10px;">
-                        <div class="card-body">
-                            <div class="position-relative">
-
-                                <div class="">
-                                    <img src="img/chocolate.jpg" class="card-img-top " alt="...">
-                                </div>
-
-                                <div class="position-absolute top-0 w-100 pt-5">
-                                    <div class=" position-absolute start-50 end-50 pt-5">
-                                        <div class=" cards-3  d-flex gap-3 justify-content-center pt-4">
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-eye"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-heart"></i></a>
-                                            <a href="#" class="text-dark   px-2 border border-dark"><i
-                                                    class="fa-solid fa-class  fa-code-compare"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="card-title  text-muted mb-1">Snacks & Munchies</p>
-                            <p class="card-text fw-bolder mb-1" style="font-size: 14px;">Slurrp Millet Chocolate</p>
-                            <div>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <i class="fa-solid fa-star text-warning"></i>
-                                <a href="#" class="text-decoration-none text-muted">(4.3)</a>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-3">
-
-                                <div>
-                                    <span>
-                                        $0
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $0
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <button class="btn bg-success text-white p-1 px-3">
-                                        Add
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+              </div>
             </div>
+          </div>
+
+          <!-- NUtichoice -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/nutri.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100 pt-5">
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Bakery & Biscuits</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  NutriChoice Digestive
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $24 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $24
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 Star -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/5star.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100">
+                    <span
+                      class="bg-danger text-white px-2 py-1 w-75 rounded-3"
+                      style="font-size: 12px"
+                      >Buy 1 Get $4.00 Off</span
+                    >
+                    <div class="d-flex flex-column gap-1 pt-4"></div>
+
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Bakery & Biscuits</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Cadbury 5 Star Chocolate
+                </p>
+
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $35 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $35
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lays -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/lays.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100">
+                    <div class="d-flex text-center flex-column gap-1 w-25">
+                      <span class="bg-danger text-white rounded-3">Hot</span>
+                      <span class="bg-success text-white rounded-3">40%</span>
+                    </div>
+
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Snacks & Munchies</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Onion Flavour Potato
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $3 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $5
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Acid -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/acid.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100">
+                    <div class="d-flex text-center flex-column gap-1 w-25">
+                      <span class="bg-success text-white rounded-3">35%</span>
+                    </div>
+
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-5"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Instant Foods</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Salted Instant popcorn
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $11.7 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $18
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 star -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/5star.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100">
+                    <span
+                      class="bg-danger text-white px-2 py-1 w-75 rounded-3"
+                      style="font-size: 12px"
+                      >Buy 1 Get $4.00 Off</span
+                    >
+                    <div class="d-flex flex-column gap-1 pt-4"></div>
+
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Bakery & Biscuits</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Cadbury 5 Star Chocolate
+                </p>
+
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $35 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $35
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bhujiya -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/bhujiya.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100">
+                    <div class="d-flex text-center flex-column gap-1 w-25">
+                      <span class="bg-danger text-white rounded-3">Sale</span>
+                      <span class="bg-success text-white rounded-3">10%</span>
+                    </div>
+
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Snacks & Munchies</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Haldiram's Sev bhujiya
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $21.6 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $24
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- yougurt -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/yogurt.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100">
+                    <span class="bg-success text-white w-100 px-2 rounded-3"
+                      >40%</span
+                    >
+
+                    <div
+                      class="d-flex text-center flex-column gap-1 w-25 pt-4"
+                    ></div>
+
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Dairy ,Breads & Eggs</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Blueberry greek Yogurt
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $14.4 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $24
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cheese -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/cheese.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100 pt-5">
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Dairy , Breads & Eggs</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Britania Cheese Slices
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $24 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $24
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- corn -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/corn.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100">
+                    <span class="bg-success text-white w-100 px-2 rounded-3"
+                      >15%</span
+                    >
+
+                    <div
+                      class="d-flex text-center flex-column gap-1 w-25 pt-4"
+                    ></div>
+
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Instant Foods</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Kellogg's Original Cereals
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $29.75 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $35
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- nutrichoice -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/nutri.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100 pt-5">
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Bakery & Biscuits</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  NutriChoice Digestive
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $24 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $24
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chocolate -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img
+                      src="img/chocolate.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100 pt-5">
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Snacks & Munchies</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Slurrp Millet Chocolate
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $0 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $0
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Butter -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/butter.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100">
+                    <span class="bg-success text-white w-100 px-2 rounded-3"
+                      >40%</span
+                    >
+
+                    <div
+                      class="d-flex text-center flex-column gap-1 w-25 pt-4"
+                    ></div>
+
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Dairy ,Breads & Eggs</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Amul Butter - 500 g
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $13.5 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $18
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- nutrichoice -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img src="img/nutri.jpg" class="card-img-top" alt="..." />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100 pt-5">
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Bakery & Biscuits</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  NutriChoice Digestive
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $24 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $24
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chocolate -->
+          <div class="col">
+            <div class="card h-100 cards-2" style="border-radius: 10px">
+              <div class="card-body">
+                <div class="position-relative">
+                  <div class="">
+                    <img
+                      src="img/chocolate.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div class="position-absolute top-0 w-100 pt-5">
+                    <div class="position-absolute start-50 end-50 pt-5">
+                      <div
+                        class="cards-3 d-flex gap-3 justify-content-center pt-4"
+                      >
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-eye"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-heart"></i
+                        ></a>
+                        <a href="#" class="text-dark px-2 border border-dark"
+                          ><i class="fa-solid fa-class fa-code-compare"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="card-title text-muted mb-1">Snacks & Munchies</p>
+                <p class="card-text fw-bolder mb-1" style="font-size: 14px">
+                  Slurrp Millet Chocolate
+                </p>
+                <div>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <a href="#" class="text-decoration-none text-muted">(4.3)</a>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-3"
+                >
+                  <div>
+                    <span> $0 </span>
+                    <span class="text-decoration-line-through text-muted">
+                      $0
+                    </span>
+                  </div>
+
+                  <div>
+                    <button class="btn bg-success text-white p-1 px-3">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Daily Best Sells -->
     <section>
-        <div class="container py-5">
-            <h3>Daily Best Sells</h3>
-            <div class="row pt-3">
+      <div class="container py-5">
+        <h3>Daily Best Sells</h3>
 
-
-                <div class="col-lg-3">
-                    <div
-                        style="background: url('img/coffee.jpg'); height: 470px; background-repeat: no-repeat; background-size: cover; border-radius: 20px;">
-                        <div class=" pt-4 ps-3 ">
-                            <h3 class="fw-bold text-white">100% Organic Coffee Beans.</h3>
-                            <p class="text-white">
-                                Get the best deal before close
-                            </p>
-                            <a class="btn btn-success">
-                                Shop Now
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div class="col-lg-3">
-                    <div class="card cards-2 border-none" style="border-radius: 10px;">
-                        <div class="card-body pt-0">
-                            <img src="img/p-1.jpg" class="img-fluid" alt="...">
-
-                            <p class="card-text text-muted mb-0">Tea , Coffee & Drinks</p>
-                            <p class="card-text fw-bolder mb-1">Roast Ground Coffee</p>
-
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <span>
-                                        $21.6
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-                                <div>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <a href="#" class="text-decoration-none text-muted">4.3</a>
-                                </div>
-                            </div>
-
-                            <div class="pt-3">
-                                <button class="btn btn-success text-white w-100" style="border-radius: 10px;">
-                                    Add to cart
-                                </button>
-                            </div>
-
-                            <div class="row pt-4">
-                                <div class="col-lg-4 px-1">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 px-1">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 px-1">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 px-1 pt-3 m-auto ">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-3">
-                    <div class="card cards-2 border-none" style="border-radius: 10px;">
-                        <div class="card-body pt-0">
-                            <img src="img/p-2.jpg" class="img-fluid" alt="...">
-
-                            <p class="card-text text-muted mb-0">Tea , Coffee & Drinks</p>
-                            <p class="card-text fw-bolder mb-1">Roast Ground Coffee</p>
-
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <span>
-                                        $21.6
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-                                <div>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <a href="#" class="text-decoration-none text-muted">4.3</a>
-                                </div>
-                            </div>
-
-                            <div class="pt-3">
-                                <button class="btn btn-success text-white w-100" style="border-radius: 10px;">
-                                    Add to cart
-                                </button>
-                            </div>
-
-                            <div class="row pt-4">
-                                <div class="col-lg-4 px-1">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 px-1">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 px-1">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 px-1 pt-3 m-auto ">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-3">
-                    <div class="card cards-2 border-none" style="border-radius: 10px;">
-                        <div class="card-body pt-0">
-                            <img src="img/p-3.jpg" class="img-fluid" alt="...">
-
-                            <p class="card-text text-muted mb-0">Tea , Coffee & Drinks</p>
-                            <p class="card-text fw-bolder mb-1">Roast Ground Coffee</p>
-
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <span>
-                                        $21.6
-                                    </span>
-                                    <span class="text-decoration-line-through text-muted">
-                                        $24
-                                    </span>
-                                </div>
-                                <div>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <i style="font-size: 10px;" class="fa-solid fa-star text-warning"></i>
-                                    <a href="#" class="text-decoration-none text-muted">4.3</a>
-                                </div>
-                            </div>
-
-                            <div class="pt-3">
-                                <button class="btn btn-success text-white w-100" style="border-radius: 10px;">
-                                    Add to cart
-                                </button>
-                            </div>
-
-                            <div class="row pt-4">
-                                <div class="col-lg-4 px-1">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 px-1">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 px-1">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 px-1 pt-3 m-auto ">
-                                    <div class="border text-center p-2" style="border-radius: 10px;">
-                                        <span>1173</span>
-                                        <span class="text-muted">Days</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="row pt-3 g-3">
+          <!-- LEFT BANNER -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="h-100 d-flex align-items-end p-3 text-white rounded"
+              style="
+                background: url(&quot;img/coffee.jpg&quot;) center/cover
+                  no-repeat;
+                min-height: 100%;
+              "
+            >
+              <div>
+                <h4 class="fw-bold">100% Organic Coffee Beans.</h4>
+                <p>Get the best deal before close</p>
+                <a class="btn btn-success">Shop Now</a>
+              </div>
             </div>
-        </div>
+          </div>
 
+          <!-- PRODUCT CARD -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="img/p-1.jpg" class="card-img-top" alt="" />
+
+              <div class="card-body">
+                <p class="text-muted mb-1">Tea , Coffee & Drinks</p>
+                <p class="fw-bold mb-2">Roast Ground Coffee</p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span>$21.6</span>
+                    <span class="text-decoration-line-through text-muted"
+                      >$24</span
+                    >
+                  </div>
+
+                  <div>
+                    <i class="fa-solid fa-star text-warning small"></i>
+                    <i class="fa-solid fa-star text-warning small"></i>
+                    <i class="fa-solid fa-star text-warning small"></i>
+                    <i class="fa-solid fa-star text-warning small"></i>
+                    <i class="fa-solid fa-star text-warning small"></i>
+                    <small class="text-muted">4.3</small>
+                  </div>
+                </div>
+
+                <button class="btn btn-success w-100 mt-3">Add to cart</button>
+
+                <!-- TIMER -->
+                <div class="row text-center mt-3 g-2">
+                  <div class="col-3">
+                    <div class="border rounded p-2">
+                      <div>1173</div>
+                      <small class="text-muted">Days</small>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="border rounded p-2">
+                      <div>23</div>
+                      <small class="text-muted">Hrs</small>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="border rounded p-2">
+                      <div>59</div>
+                      <small class="text-muted">Min</small>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="border rounded p-2">
+                      <div>10</div>
+                      <small class="text-muted">Sec</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- COPY SAME CARD 2 MORE TIMES -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="img/p-2.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="text-muted mb-1">Tea , Coffee & Drinks</p>
+                <p class="fw-bold mb-2">Roast Ground Coffee</p>
+
+                <div class="d-flex justify-content-between">
+                  <span>$21.6</span>
+                  <small class="text-muted">4.3 ★</small>
+                </div>
+
+                <button class="btn btn-success w-100 mt-3">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100">
+              <img src="img/p-3.jpg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <p class="text-muted mb-1">Tea , Coffee & Drinks</p>
+                <p class="fw-bold mb-2">Roast Ground Coffee</p>
+
+                <div class="d-flex justify-content-between">
+                  <span>$21.6</span>
+                  <small class="text-muted">4.3 ★</small>
+                </div>
+
+                <button class="btn btn-success w-100 mt-3">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 4 rows -->
     <section class="py-4">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3">
-                    <div>
-                        <img src="img/watch.png" class="img-fluid h-100" alt="">
-                        <h5 class="fw-bold">10 minute grocery now</h5>
-                        <p class="text-muted">Get your order delivered to your doorstep at the earliest from FreshCart
-                            pickup stores near you.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div>
-                        <img src="img/gift.png" class="img-fluid h-100" alt="">
-                        <h5 class="fw-bold">Best Prices & Offers</h5>
-                        <p class="text-muted">Cheaper prices than your local supermarket, great cashback offers to top
-                            it off. Get best pricess & offers.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div>
-                        <img src="img/wide.png" class="img-fluid h-100" alt="">
-                        <h5 class="fw-bold">Wide Assortment</h5>
-                        <p class="text-muted">Choose from 5000+ products across food, personal care, household, bakery,
-                            veg and non-veg & other categories.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div>
-                        <img src="img/return.png" class="img-fluid h-100" alt="">
-                        <h5 class="fw-bold">Easy Returns</h5>
-                        <p class="text-muted">Not satisfied with a product? Return it at the doorstep & get a refund
-                            within hours. No questions asked policy </p>
-                    </div>
-                </div>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div>
+              <img src="img/watch.png" class="img-fluid h-100" alt="" />
+              <h5 class="fw-bold">10 minute grocery now</h5>
+              <p class="text-muted">
+                Get your order delivered to your doorstep at the earliest from
+                FreshCart pickup stores near you.
+              </p>
             </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div>
+              <img src="img/gift.png" class="img-fluid h-100" alt="" />
+              <h5 class="fw-bold">Best Prices & Offers</h5>
+              <p class="text-muted">
+                Cheaper prices than your local supermarket, great cashback
+                offers to top it off. Get best pricess & offers.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div>
+              <img src="img/wide.png" class="img-fluid h-100" alt="" />
+              <h5 class="fw-bold">Wide Assortment</h5>
+              <p class="text-muted">
+                Choose from 5000+ products across food, personal care,
+                household, bakery, veg and non-veg & other categories.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div>
+              <img src="img/return.png" class="img-fluid h-100" alt="" />
+              <h5 class="fw-bold">Easy Returns</h5>
+              <p class="text-muted">
+                Not satisfied with a product? Return it at the doorstep & get a
+                refund within hours. No questions asked policy
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-  
-
     <script src="all.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="owl.carousel.min.js"></script>
     <script src="bootstrap.bundle.min.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: true,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 4
-                }
-            }
-        })
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
+          1000: {
+            items: 4,
+          },
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>
